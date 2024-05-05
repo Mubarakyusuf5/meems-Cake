@@ -1,0 +1,46 @@
+.Pcard{
+    background-color: var(--white);
+    position: relative;
+    overflow: hidden;
+
+}
+.Pcard img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.Pcard .con{
+    padding: 10px;
+    text-align: center;
+}
+.Pcard h3{
+    font-size: 1.15rem;
+    color: var(--pink);
+}
+.Pcard p{
+    color: var(--choco);
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+
+.order{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    /* padding: 10px; */
+    transition: all 0.3 ease-in-out;
+    height: 0;
+    overflow: hidden;
+}
+.order a{
+    padding: 10px;
+    border-radius: 50%;
+    background-color: var(--choco);
+    color: var(--white);
+}
+
+.Pcard:hover .order{
+    min-height: 50px;
+    padding: 10px;
+}

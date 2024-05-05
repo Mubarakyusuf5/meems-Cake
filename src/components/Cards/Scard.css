@@ -3,7 +3,7 @@
     height: 250px;
     /* background-color: var(--lightpink); */
     position: relative;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 .Sbadge{
 position: absolute;
@@ -13,11 +13,11 @@ background-color: var(--white);
 color: var(--choco);
 font-size: 1rem;
 left: 14%;
-border-radius: 5px;
+/* border-radius: 5px; */
 }
 .Scard img{
     object-fit: cover;
     height: 250px;
     width: 100%;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }

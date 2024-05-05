@@ -46,8 +46,8 @@ export const Nav = () => {
 
         <div className="icon">
             {/* <a href=""><FontAwesomeIcon icon={faFacebook } /> </a> */}
-            <a href="www.facebook.com">Facebook</a>
-            <a href="" target="_blank">X</a>
+            <a href="https://web.facebook.com" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/_meems_cakes/" target="_blank">inta</a>
         </div>
       </div>
       <nav className={navbar ? 'color' : ''}>

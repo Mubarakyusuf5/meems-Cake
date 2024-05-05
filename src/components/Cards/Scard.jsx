@@ -22,7 +22,6 @@ export const Scard = () => {
   return (
     <>
     {place}
-
     </>
   )
 }
