@@ -1,0 +1,16 @@
+.about .head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about .head h2{
+    font-size: 2rem;
+}
+
+.about .head h4{
+    color: var(--pink);
+    font-size: 1.1rem;
+}

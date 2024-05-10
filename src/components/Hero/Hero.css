@@ -1,0 +1,28 @@
+.herocon{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--lightgray);
+    padding: 0 5%;
+}
+
+.herocon h3{
+    font-size: 3rem;
+    color: var(--white);
+    margin-bottom: 15px;
+    font-style: italic;
+}
+.linkcon{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    color: var(--white);
+}
+
+.linkcon a{
+    color: var(--white);
+    font-size: 1.1rem;
+    display: block;
+}

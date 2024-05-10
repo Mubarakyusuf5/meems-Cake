@@ -22,6 +22,21 @@
   list-style: none;
 }
 
+.preloader{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(252, 226, 230, 0.534);
+}
+
 section{
-  padding: 40px 5%;
+  padding: 50px 5%;
+}
+
+@media screen and (max-width:768px){
+  .topdivcon{
+    display: none;
+  }
+  
 }

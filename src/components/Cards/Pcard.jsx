@@ -4,7 +4,7 @@ export const Pcard = () => {
   return (
     <>
     <div className="Pcard">
-        <img src="" alt="" />
+        <img src="/images/meem2.jpeg" alt="" />
         <div className="con">
         <h3 className="name">Red Velvet Cake (10 inche)</h3>
         <p className="price">$30</p>
@@ -15,7 +15,7 @@ export const Pcard = () => {
         </div>
     </div>
     <div className="Pcard">
-        <img src="" alt="" />
+        <img src="/images/meem1.jpeg" alt="" />
         <div className="con">
         <h3 className="name">Red Velvet Cake (10 inche)</h3>
         <p className="price">$30</p>
@@ -23,7 +23,7 @@ export const Pcard = () => {
 
     </div>
     <div className="Pcard">
-        <img src="" alt="" />
+        <img src="/images/meem3.jpeg" alt="" />
         <div className="con">
         <h3 className="name">Red Velvet Cake (10 inche)</h3>
         <p className="price">$30</p>
@@ -31,7 +31,7 @@ export const Pcard = () => {
 
     </div>
     <div className="Pcard">
-        <img src="" alt="" />
+        <img src="/images/meem5.jpeg" alt="" />
         <div className="con">
         <h3 className="name">Red Velvet Cake (10 inche)</h3>
         <p className="price">$30</p>
@@ -39,7 +39,7 @@ export const Pcard = () => {
 
     </div>
     <div className="Pcard">
-        <img src="" alt="" />
+        <img src="/images/meem6.jpeg" alt="" />
         <div className="con">
         <h3 className="name">Red Velvet Cake (10 inche)</h3>
         <p className="price">$30</p>

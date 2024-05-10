@@ -4,19 +4,23 @@ import { NavLink, Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faBars,
+    faEnvelope,
+    faPhone,
     faTimes
   } from "@fortawesome/free-solid-svg-icons";
+import { faFacebookF, faInstagram, faWhatsapp } from "@fortawesome/fontawesome-free-brands";
 
 
 export const Nav = () => {
   const [isRes, setIsRes] = useState(false);
   const [navbar, setNavbar] = useState(true);
   const Links = [
-    { id: 1, name: "Home", url: "/home" },
+    { id: 1, name: "Home", url: "/" },
     { id: 2, name: "Shop", url: "/shop" },
     { id: 3, name: "Cake", url: "/cake" },
     { id: 4, name: "Treat", url: "/treat" },
     { id: 5, name: "About", url: "/about" },
+    { id: 5, name: "signin", url: "/signin", icon:"" },
   ];
   const linking = Links.map((link) => (
     <li key={link.id}>
@@ -33,25 +37,25 @@ export const Nav = () => {
 
   return (
     <>
+    <div className="topdivcon">
       <div className="topdiv">
         <div className="col">
-          <div className="num">
-            <a href="callto:">+4567890</a>
-          </div>
+            <a href="callto:"><FontAwesomeIcon icon={faPhone}/> +2348134567890</a>
           |
-          <div className="email">
-            <a href="mailto:">memecake</a>
-          </div>
+          <a href=""><FontAwesomeIcon icon={faWhatsapp}/> +2348134567890</a>
         </div>
 
         <div className="icon">
-            {/* <a href=""><FontAwesomeIcon icon={faFacebook } /> </a> */}
-            <a href="https://web.facebook.com" target="_blank">Facebook</a>
-            <a href="https://www.instagram.com/_meems_cakes/" target="_blank">inta</a>
+            <a href="mailto:" className="email"><FontAwesomeIcon icon={faEnvelope} /> meemscake@gmail.com</a>
+          |
+            <a href="https://web.facebook.com" target="_blank"><FontAwesomeIcon icon={faFacebookF} /></a>
+            <a href="https://www.instagram.com/_meems_cakes/" target="_blank"><FontAwesomeIcon icon={faInstagram} /></a>
         </div>
       </div>
+
+    </div>
       <nav className={navbar ? 'color' : ''}>
-       <Link to='/home'> <img src="/images/meemcake.png" alt="" className="logo"  /> </Link>
+       <Link to='/'> <img src="/images/meemcake.png" alt="" className="logo"  /> </Link>
         <ul className="navUl">{linking}</ul>
         <div className="toggle" onClick={toggle}>
         {isRes ? <FontAwesomeIcon icon={faTimes} /> : <FontAwesomeIcon icon={faBars} /> }

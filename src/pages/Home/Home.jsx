@@ -28,6 +28,18 @@ export const Home = () => {
         <Pcard />
       </div>
     </section>
+    <section className='testmonial'>
+      <h2>Client Says</h2>
+      <div className="testCon">
+
+      </div>
+    </section>
+    <section className='project'>
+      <h2>Our Creations</h2>
+      <div className="projectCon">
+
+      </div>
+    </section>
     </div>
     </>
   )
