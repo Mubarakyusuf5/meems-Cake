@@ -17,26 +17,30 @@ nav.color{
 
 .navUl{
     display: flex;
-    gap: 19px;
+    gap: 20px;
 }
 
 .navUl a{
     font-size: 1.08rem;
     position: relative;
-    color: var(--pink);
+    color: var(--black);
     font-weight: 500 ;
+    transition: all .3s ease;
+}
+.navUl a.active{
+    color: var(--pink);
 }
 .navUl a.active::after{
     content : '';
     bottom: -10px;
     width: 6px;
     height: 6px;
-    background-color: var(--choco);
+    background-color: var(--pink);
     border-radius: 50%;
     position: absolute;
     left: 50%;
-    transition: width 0.5s, height 0.5s, border-radius 0.5s, border-width 0.5s,
-      transform 0.5s;
+    transition: width 0.3s, height 0.3s, border-radius 0.3s, border-width 0.3s,
+      transform 0.3s;
     transform: translate(-50%, -50%);
 }
 
@@ -44,7 +48,7 @@ nav.color{
     width: 90px;
 }
 .navUl li a:hover{
-    color: brown;
+    color: var(--pink);
 }
 
 .topdiv{
@@ -52,8 +56,9 @@ nav.color{
     justify-content: space-between;
     align-items: center;
     padding: 10px 5%;
-    background-color: var(--pink);
-    color: var(--choco);
+    /* background-color: var(--pink); */
+    color: var(--black);
+    border-bottom: 1px solid #eee;
 }
 
 .col{
@@ -64,7 +69,7 @@ nav.color{
 
 .col a{
     font-size: 1rem;
-    color: var(--white);
+    color: var(--black);
 }
 
 .icon{
@@ -72,19 +77,30 @@ nav.color{
     gap: 15px;
 }
 
+.ico{
+    color: var(--pink);
+}
+
 .icon a{
     font-size: 1.1rem;
-    color: var(--white);
+    color: var(--pink);
+}
+.icon a:hover{
+    color: var(--pink);
+}
+.col a:hover{
+    color: var(--pink);
 }
 .icon .email{
     font-size: 1rem;
+    color: var(--black);
 }
 
 .toggle{
     display: none;
     cursor: pointer;
     font-size: 1.5em;
-    color: var(--choco);
+    color: var(--black);
 }
 
 .mobile{

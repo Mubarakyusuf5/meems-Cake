@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Home.css'
 import { Scard } from '../../components/Cards/Scard'
 import { Pcard } from '../../components/Cards/Pcard'
 import { Link } from 'react-router-dom'
 
 export const Home = () => {
+  useEffect(() => {
+    document.title = " Home - Meem's Cake | Affordable Cakes in Kaduna, Nigeria";
+  }, []);
   return (
     <>
     <div className="container">

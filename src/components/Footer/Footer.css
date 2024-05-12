@@ -1,64 +1,97 @@
-footer{
-    background-color: var(--lightpink);
-    padding: 0 5%;
-    padding-top: 50px;
-}
-.footer{
-    border-top: 1px solid var(--lightgray);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 19px 0;
+footer {
+  border-top: 2px solid #eee;
 }
 
-.footer .con .social {
-    gap: 10px;
-
+.footCon {
+  padding: 40px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.footer .con .social a{
-    display: inline-block;
-    margin-left: 10px;
-    font-size: 20px;
-    color: var(--white);
-    background-color: var(--gray);
-    padding: 8px;
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
-    line-height: 26px;
-    text-align: center;
-    transition: all 0.3s ease;
+.footCon .info {
+  width: 250px;
 }
 
-.footer .con .social a:hover{
-    background-color: var(--lightgray);
+.footCon  h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  letter-spacing: 0.2rem;
 }
 
-.footer .con{
-    display: flex;
-    align-items: flex-end;
-    /* justify-content: flex-end; */
-    flex-direction: column;
-    gap: 10px;
+.footCon .info li {
+  padding: 10px 10px 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--black);
+}
+.footCon .info a {
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.footer img{
-    width: 140px;
+.sub {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.footer .con p{
-    color: var(--lightgray);
+.sub li {
+  display: inline-block; /* Display icons horizontally */
+  margin-right: 0 5px; /* Add spacing between icons */
 }
 
-.footerCon{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+.sub li a {
+  display: flex; /* Use flexbox to center the icon */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: 40px; /* Set width and height for circular shape */
+  height: 40px;
+  border: 1px solid var(--black); /* Border style */
+  border-radius: 50%; /* Create a circular shape */
+  padding: 10px; /* Add padding */
+  color: #eee;
 }
 
-.info, .category{
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
+.sub li a:hover {
+  background-color: #f0f0f0;
+  border: 1px solid var(--pink);
+}
+
+.footCon .info a:hover {
+  color: var(--pink);
+}
+
+.foot {
+  text-align: center;
+  border-top: 2px solid #eee;
+  padding: 20px 5%;
+  color: var(--black);
+  font-size: 0.9rem;
+}
+
+.cat a{
+    padding: 10px;
+    display: block;
+    color: var(--black);
+    transition: all ease .3s;
+
+}
+.cat a:hover{
+    color: var(--pink);
+    transform: translateX(10px);
+}
+
+@media screen and (max-width: 425px) {
+    .footCon{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footCon .info{
+        margin-bottom: 30px;
+    }
 }

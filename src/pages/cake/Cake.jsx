@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Cake.css'
+import { Hero } from '../../components/Hero/Hero';
 
 export const Cake = () => {
+  useEffect(() => {
+    document.title = " Meem's Cake | Cakes";
+  }, []);
   return (
     <>
-    <div className="container">
-    Home
-    </div>
+    <Hero title="Cake" link="/" name="Home" name1="Cakes" />
     </>
   )
 }

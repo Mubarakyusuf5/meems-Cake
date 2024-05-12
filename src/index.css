@@ -12,6 +12,8 @@
   --white: #fff;
   --gray: #777474;
   --lightgray: #423f3f;
+  --black: #0f0f0f;
+  --overlay: #ba5a87b2;
   
 }
 *{
@@ -37,6 +39,5 @@ section{
 @media screen and (max-width:768px){
   .topdivcon{
     display: none;
-  }
-  
+  } 
 }

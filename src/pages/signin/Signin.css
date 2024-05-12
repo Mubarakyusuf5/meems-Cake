@@ -1,0 +1,80 @@
+.loginCon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/images/back3.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0 5%;
+}
+
+.form form{
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+}
+
+.form input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 13px;
+    outline: none;
+    border: 1px solid var(--gray);
+}
+
+.form input:focus{
+    border: 1px solid var(--pink);
+    outline: none;
+}
+
+.form h2{
+    text-align: center;
+    color: var(--pink);
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.form button{
+    width: 100%;
+    padding: 10px;
+    font-size: 1.03rem;
+    font-weight: 600;
+    color: var(--white);
+    background-color: var(--pink);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.form button:hover{
+    background-color: var(--pinkhover);
+}
+
+.form .frgt{
+    text-align: center;
+    font-size: .9rem;
+    color: var(--pink);
+    margin-bottom: 30px;
+    display: block;
+}
+
+.form .frgt:hover{
+    color: var(--pinkhover);
+}
+
+.form p{
+    text-align: center;
+    font-size: .9rem;
+    color: var(--gray);
+    margin: 10px 0;
+}
+.form p a{
+    color: var(--pink);
+}
+.form p a:hover{
+    color: var(--pinkhover);
+}

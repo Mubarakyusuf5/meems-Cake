@@ -1,24 +1,32 @@
-import React, { useState, useEffect } from "react";
-import { Route, Routes } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
 import { Home } from "./pages/Home/Home";
 import { Shop } from "./pages/shop/Shop";
-import { Cake } from "./pages/cake/Cake";
 import { Signin } from "./pages/signin/Signin";
-import { Treat } from "./pages/treat/Treat";
 import { Nav } from "./components/Navbar/Nav";
 import { About } from "./pages/About/About";
 import { Footer } from "./components/Footer/Footer";
-import { BeatLoader} from "react-spinners";
+import { BeatLoader } from "react-spinners";
+import { Signup } from "./pages/signin/Signup";
+import { Contact } from "./pages/Contact/Contact";
+import { Cart } from "./pages/cart/Cart";
 
 export const App = () => {
   const [loading, setLoading] = useState(false);
+  const location = useLocation();
 
+  // This useEffect will trigger whenever the location changes
   useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
+    setLoading(true); // Set loading to true whenever a new page is requested
+    const timer = setTimeout(() => {
+      setLoading(false); // Set loading to false after a delay (simulating content loading)
     }, 1000);
-  }, []);
+    return () => clearTimeout(timer); // Cleanup timer on unmount
+  }, [location]);
+
+  // Check if the current path is '/signin'
+  const isSignInPage = location.pathname === "/signin";
+  const isSignUpPage = location.pathname === "/signup";
 
   return (
     <>
@@ -28,16 +36,18 @@ export const App = () => {
         </div>
       ) : (
         <>
-          <Nav />
+          {/* Conditionally render Nav based on the current route */}
+          {!isSignInPage && !isSignUpPage && <Nav />}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/shop" element={<Shop />} />
-            <Route path="/cake" element={<Cake />} />
+            <Route path="/cart" element={<Cart />} />
             <Route path="/signin" element={<Signin />} />
-            <Route path="/treat" element={<Treat />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
           </Routes>
-          <Footer />
+          {!isSignInPage && !isSignUpPage && <Footer />}
         </>
       )}
     </>

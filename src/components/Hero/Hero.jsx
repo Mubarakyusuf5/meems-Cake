@@ -7,11 +7,10 @@ export const Hero = (props) => {
     <>
     <div className="herocon">
         <h3>{props.title}</h3>
-        {/* <h3>About</h3> */}
         <div className="linkcon">
             <Link to={props.link}>{props.name}</Link>
             /
-            <Link to={props.link1}>{props.name1}</Link>
+            <p>{props.name1}</p>
         </div>
     </div>
     </>
