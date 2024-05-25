@@ -1,28 +1,48 @@
 .hero{
-    /* background-image: url(/public/images/meemcake.png); */
-    background-color: rgba(252, 226, 230, 0.534);
+    background-image: url(/images/mm.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* background-color: rgba(255, 223, 227, 0.315); */
     height: 90vh;
     /* padding: 30px 5%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero .Hleft{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: flex-start;
 }
 
+.Hright{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+/* .hero .Hright img{
+    width: 700px;
+} */
+
 .hero h1{
-    font-size: 4rem;
+    font-size: 5rem;
     letter-spacing: 0.2rem;
     color: var(--pink);
     
 }
 
 .hero h2{
-    font-size: 2.2rem;
-    color: var(--choco);
+    font-size: 2.6rem;
+    color: var(--black);
 }
 
 .hero p{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-top: 25px;
     color: var(--lightgray);
 }
@@ -42,7 +62,7 @@
     background-color: var(--pinkhover);
 }
 
-/* --------------------------spec ------------------- */
+/* --------------------------spec ------------------ */
 .spec{
     min-height: 40vh;
 }
@@ -50,7 +70,7 @@
 .spec .head h2{
     text-align: center;
     font-size: 2.4rem;
-    color: var(--choco);
+    color: var(--black);
 }
 
 .spec .card{
@@ -68,7 +88,7 @@
 .product h2{
     text-align: center;
     font-size: 2.4rem;
-    color: var(--choco);
+    color: var(--black);
 }
 
 .product .card{
@@ -83,11 +103,11 @@
 .testmonial h2{
     text-align: center;
     font-size: 2.4rem;
-    color: var(--choco);
+    color: var(--black);
 }
 /* --------------------------------project----------------------------------- */
 .project h2{
     text-align: center;
     font-size: 2.4rem;
-    color: var(--choco);
+    color: var(--black);
 }

@@ -3,7 +3,7 @@ import './Cart.css'
 
 export const Cart = () => {
   useEffect(() => {
-    document.title = " Meem's Cake | Cart";
+    document.title = "Cart | Meem's Cakes";
   }, []);
   return (
     <>

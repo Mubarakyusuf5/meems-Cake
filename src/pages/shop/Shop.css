@@ -45,7 +45,7 @@
     padding: 10px;
     display: block;
     color: var(--black);
-    gap: 10px;
+    /* gap: 10px; */
     border-top: 1px solid #eee;
     width: 100%;
 }

@@ -78,3 +78,9 @@
 .form p a:hover{
     color: var(--pinkhover);
 }
+
+@media screen and (max-width: 425px) {
+    .form form{
+        width: 345px;
+    }
+}

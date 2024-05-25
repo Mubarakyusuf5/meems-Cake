@@ -77,12 +77,12 @@
 }
 
 /* Tooltip styles */
-.overlay a::after {
-    content: attr(data-tooltip); /* Use the value of the data-tooltip attribute as tooltip content */
+/* .overlay a::after {
+    content: attr(data-tooltip); 
     position: absolute;
-    bottom: 50px; /* Position above the link */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Center horizontally */
+    bottom: 50px; 
+    left: 50%; 
+    transform: translateX(-50%); 
     background-color: var(--black);
     color: var(--white);
     padding: 5px 7px;
@@ -90,27 +90,24 @@
     text-align: center;
     border-radius: 5px;
     font-size: .8rem;
-    opacity: 0; /* Initially hidden */
+    opacity: 0; 
     transition: opacity 0.3s ease;
 }
 
 .overlay a::before {
     content: '';
     position: absolute;
-    bottom: calc(100% + 5px); /* Position above the link */
+    bottom: calc(100% + 5px); 
     left: 39%;
     transform: rotate(45deg);
     height: 10px;
     width: 10px;
     background-color: var(--black);
-    /* border-width: 5px; 
-    border-style: solid;
-    border-color: transparent transparent var(--tooltip-bg-color) transparent;  */
     opacity: 0;
     transition: opacity 0.3s ease;
 }
 
 
 .overlay a:hover::after, .overlay a:hover::before {
-    opacity: 1; /* Show tooltip on hover */
-}
+    opacity: 1; 
+} */

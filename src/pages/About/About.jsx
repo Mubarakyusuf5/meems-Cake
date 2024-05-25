@@ -4,7 +4,7 @@ import { Hero } from '../../components/Hero/Hero'
 
 export const About = () => {
   useEffect(() => {
-    document.title = " Meem's Cake | About";
+    document.title = "About Us | Meem's Cakes";
   }, []);
   return (
     <>

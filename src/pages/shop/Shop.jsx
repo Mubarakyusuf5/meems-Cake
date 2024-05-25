@@ -8,7 +8,7 @@ import { Pcard } from '../../components/Cards/Pcard';
 
 export const Shop = () => {
   useEffect(() => {
-    document.title = " Meem's Cake | Shop";
+    document.title = "Shop | Meem's Cakes";
   }, []);
   const links =[
     {id: 1, name: 'All', url: '/shop'},

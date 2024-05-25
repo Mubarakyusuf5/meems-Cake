@@ -1,0 +1,24 @@
+.account{
+    height: 100vh;
+}
+
+.accnt-Tag{
+    background-color: var(--white);
+    width: 270px;
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.1);
+    /* padding: 10px; */
+}
+
+.accnt-Tag a{
+    /* background-color: blueviolet; */
+    padding: 10px;
+    display: block;
+    border-top: 1px solid #00000015;
+    color: var(--black);
+    transition:all ease .3s;
+}
+
+.accnt-Tag a:hover{
+    background-color: var(--pink);
+    color: var(--white);
+}

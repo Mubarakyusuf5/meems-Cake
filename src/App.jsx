@@ -10,6 +10,7 @@ import { BeatLoader } from "react-spinners";
 import { Signup } from "./pages/signin/Signup";
 import { Contact } from "./pages/Contact/Contact";
 import { Cart } from "./pages/cart/Cart";
+import { Account } from "./pages/account/Account";
 
 export const App = () => {
   const [loading, setLoading] = useState(false);
@@ -46,6 +47,7 @@ export const App = () => {
             <Route path="/signup" element={<Signup />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
+            <Route path="/account" element={<Account />} />
           </Routes>
           {!isSignInPage && !isSignUpPage && <Footer />}
         </>

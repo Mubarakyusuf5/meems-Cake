@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 export const Signup = () => {
   useEffect(() => {
-    document.title = " Meem's Cake | Register";
+    document.title = "Register | Meem's Cakes";
   }, []);
   return (
     <>
